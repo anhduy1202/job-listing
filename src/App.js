@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import JobList from './JobList';
-import '../scss/style.css';
-import {companyData} from '../data';
-import bgMobile from '../images/bg-header-mobile.svg';
-import bgDesktop from '../images/bg-header-desktop.svg';
+import JobList from './app/js/JobList';
+import './app/scss/style.css';
+import {companyData} from './app/data';
+import bgMobile from './app/images/bg-header-mobile.svg';
+import bgDesktop from './app/images/bg-header-desktop.svg';
 
 function App() {
   const [job,setJobs] = useState(companyData);
