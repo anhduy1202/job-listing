@@ -18,11 +18,10 @@ const JobList = (props) => {
            
              return (
             <div className="jobCard" key={id}>
-           <img src={logo} alt="Company's logo" />
+           <img className="logoImg" src={logo} alt="Company's logo" />
                 <div className="topContainer">
                     <p className="topContainer-name"> {company} {newList && <span className="topContainer-new"> NEW  </span> } {featured && <span className="topContainer-featured"> FEATURED </span>} </p>
-                </div>
-                <div className="middleContainer">
+                    <div className="middleContainer">
                     <article>
                        <p>{position} </p>  
                    <ul className="middleContainer-info flex"> 
@@ -32,6 +31,8 @@ const JobList = (props) => {
                    </ul>  
                     </article>
                 </div>
+                </div>
+                
 
                 <div className="bottomContainer flex">
                     <button value={role} onClick={()=>handleButtons(role)}> {role} </button>
