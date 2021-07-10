@@ -57,7 +57,7 @@ function App() {
          {filters.map((filter) => (
          <span onClick={()=>handleFilterRemove(filter)}> {filter} <em> x </em> </span>
          ))}
-         <div className="searchBox-clear">
+         <div className="searchBox-clear flex flex-ai-c">
            <span onClick={()=>handleClear(filters)}> Clear </span>
          </div>
       </div>

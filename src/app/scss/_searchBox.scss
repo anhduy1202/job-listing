@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 header {
     img {
         min-width:100vw;
@@ -9,24 +10,24 @@ header {
   position: relative;
     background-color: white;
     transform: translateY(-50%);
-    padding: 0.675rem;
-    width:100%;
+    padding: 0.875rem;
+    min-width:80%;
     flex-wrap: wrap;
     box-shadow: 0px 20px 35px -15px $desaturatedDarkCyan;
-    
     span:not(:last-child) {
         position: relative;
         display: flex;
-align-items: center;
        
-        margin-right: 2.75rem;
+        margin-right: 3.75rem;
         margin-bottom: 0.75rem;
-        padding: 0.5rem;
-        border-radius: 10px;
+        padding: 0.45rem;
+        border-radius: 5px;
         color:$desaturatedDarkCyan;
         background-color:$lightGrayishCyan;
         font-weight: 700;
-       
+        @include breakpoint-down(medium) {
+            margin-right: 2.225rem;
+        }
     }
     em {
         cursor: pointer;
@@ -36,27 +37,37 @@ align-items: center;
         top:0;
         right:0;
         padding:0.5rem;
-        transform: translateX(100%);
+        transform: translateX(80%);
        border-top-right-radius: inherit;
        &:hover{
         transition: 100ms ease-in-out;
         background: $veryDarkGrayishCyan;
        
     }
+    @include breakpoint-down(medium) {
+        transform: translateX(80%);
+        
+    }
        
     }
 
     &-clear {
+     
         cursor: pointer;
-        align-self: center;
-        position:absolute;
-        right:0;
-        margin-right: 1rem;
-        color: $darkGrayishCyan;
+        margin-right: 0.5rem;
+            margin-left: 1.25rem;
+        min-width:100%;
+        transform: translateY(-100%);
+        justify-content: flex-end;
+        color: $desaturatedDarkCyan;
         font-weight: 700;
         &:hover{
             transition: 100ms ease-in-out;
             color:$veryDarkGrayishCyan;
+        }
+        span {
+           
+            margin-right: 1rem;
         }
     }
 }
