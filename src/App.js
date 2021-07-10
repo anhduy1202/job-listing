@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import JobList from './JobList';
 import './app/scss/style.css';
-import {companyData} from './app/data';
+import {companyData} from './data';
 import bgMobile from './app/images/bg-header-mobile.svg';
 import bgDesktop from './app/images/bg-header-desktop.svg';
 

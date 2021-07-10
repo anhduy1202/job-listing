@@ -1,13 +1,13 @@
-import photosnapLogo from './images/photosnap.svg';
-import manageLogo from './images/manage.svg';
-import accountLogo from './images/account.svg';
-import myHomeLogo from './images/myhome.svg';
-import loopStudiosLogo from './images/loop-studios.svg';
-import faceItLogo from './images/faceit.svg';
-import shortlyLogo from './images/shortly.svg';
-import insureLogo from './images/insure.svg';
-import eyeCamLogo from './images/eyecam-co.svg';
-import airFilterLogo from './images/the-air-filter-company.svg';
+import photosnapLogo from './app/images/photosnap.svg';
+import manageLogo from './app/images/manage.svg';
+import accountLogo from './app/images/account.svg';
+import myHomeLogo from './app/images/myhome.svg';
+import loopStudiosLogo from './app/images/loop-studios.svg';
+import faceItLogo from './app/images/faceit.svg';
+import shortlyLogo from './app/images/shortly.svg';
+import insureLogo from './app/images/insure.svg';
+import eyeCamLogo from './app/images/eyecam-co.svg';
+import airFilterLogo from './app/images/the-air-filter-company.svg';
  export const companyData =
 [
   {
