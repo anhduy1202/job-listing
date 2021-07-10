@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import JobList from './app/js/JobList';
+import JobList from './JobList';
 import './app/scss/style.css';
 import {companyData} from './app/data';
 import bgMobile from './app/images/bg-header-mobile.svg';
